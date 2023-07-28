@@ -8,11 +8,13 @@ const Header = (props) => {
 
   const [sortedContent, setSortedContent] = useState({})
 
+  // Whenever the component gets new cart data through the props that data is set into the state and the sortBySize function is run
   useEffect(() => {
     setCartContent(props.cart);
     sortBySize()
   }, [props.cart]);
 
+  // Sorts the cart by size and stores the sorted data in the "sorted" state variable
   function sortBySize() {
     var sorted = {};
     for (var i = 0, max = props.cart.length; i < max; i++) {
@@ -22,7 +24,6 @@ const Header = (props) => {
       sorted[props.cart[i].itemSize].push(props.cart[i]);
     }
     setSortedContent(sorted)
-    console.log(props.cart)
   }
   return (
     <div id="headerContainer">
@@ -33,7 +34,8 @@ const Header = (props) => {
             My Cart ({cartContent.length})
           </div>
           <div id="headerCartDropdown">
-            {Object.keys(sortedContent).map(content => (<DropdownNode item={sortedContent[content]} />))}
+            {/* Converts the sorted content into an array and then uses the "map" function to go through the sorted content and render a DropdownNode in the menu for each different item size */}
+            {Object.keys(sortedContent).map(content => (<DropdownNode key={content} item={sortedContent[content]} />))}
           </div>
         </div>
       </div>

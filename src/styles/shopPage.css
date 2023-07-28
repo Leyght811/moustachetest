@@ -2,22 +2,29 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  
   padding-top: 20px;
-  /* height: calc(100vh - 50px); */
 }
 
+/* Styles relating to the image and it's container */
+#shopImage {
+  width: 400px;
+  margin-right: 50px;
+}
+
+.itemImage {
+  width: 100%;
+}
+
+/* Styles relating to the info section */
 #shopInfo {
   display: flex;
   flex-direction: column;
   width: 400px;
-  height: 800px;
   margin-left: 100px;
 }
 
-#shopImage {
-  width: 400px;
-  margin-right: 50px;
+.infoSection {
+  margin-bottom: 30px;
 }
 
 #itemName {
@@ -25,8 +32,19 @@
   font-weight: 500;
 }
 
-.itemImage {
-  width: 100%;
+#itemPrice {
+  font-weight: 600;
+
+  font-size: 14px;
+}
+
+#itemDescription {
+  font-size: 11px;
+}
+
+#itemSizeTitle {
+  font-size: 12px;
+  margin-bottom: 15px;
 }
 
 #itemSize {
@@ -35,15 +53,7 @@
   margin-bottom: 15px;
 }
 
-#itemSizeTitle {
-  font-size: 12px;
-  margin-bottom: 15px;
-}
-
-#itemDescription {
-  font-size: 11px;
-}
-
+/* Styles relating to the buttons on the store page */
 .sizeButtonContainer {
   border: 2px solid #cccccc;
   height: 40px;
@@ -78,16 +88,6 @@
   margin-top: 3px;
 }
 
-.infoSection {
-  margin-bottom: 30px;
-}
-
-#itemPrice {
-  font-weight: 600;
-
-  font-size: 14px;
-}
-
 /* STYLES ONLY APPLY ON SCREENS SMALLER THAN 1028px wide */
 @media only screen and (max-width: 1028px) {
   #pageContainer {
@@ -98,6 +98,7 @@
   #shopInfo{
     margin: 0;
     width: 400px;
+    padding-bottom: 50px;
   }
 
   #itemDescription{

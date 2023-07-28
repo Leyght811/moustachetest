@@ -1,0 +1,82 @@
+#headerContainer {
+  position: relative;
+  /* background-color: red; */
+  padding: 15px;
+}
+
+#headerBody {
+  position: relative;
+  height: 30px;
+  background-color: #f6f6f7;
+  border: 0px solid black;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#headerCartButton {
+  margin-right: 150px;
+}
+
+#headerCartDropdown {
+  display: none;
+  position: absolute;
+  background-color: white;
+  /* min-width: 160px; */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#headerCartDropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#headerCartDropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover #headerCartDropdown {
+  display: block;
+  border: 1px solid #222222;
+}
+
+.dropdown {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.dropdown:hover #headerCartButton {
+  background-color: white;
+  border-left: 1px solid #222222;
+  border-right: 1px solid #222222;
+  border-top: 1px solid #222222;
+  border-bottom: 1px solid white;
+}
+
+.dropdownNode{
+  display: flex;
+  padding: 20px;
+}
+
+.dropDownImage{
+  height: 100px;
+  width: 60px;
+}
+
+.dNodeItems{
+  display: flex;
+}
+
+.dNodeAmount{
+  margin-right: 2px;
+}
+
+.dNodePrice{
+  font-weight: 600;
+}
+
+.dNodeInfo > div {
+  margin-bottom: 10px;
+}

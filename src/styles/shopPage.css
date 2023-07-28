@@ -1,0 +1,89 @@
+#pageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  /* height: calc(100vh - 50px); */
+}
+
+#shopInfo {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 800px;
+  margin-left: 100px;
+}
+
+#shopImage {
+  width: 400px;
+  height: 800px;
+  margin-right: 50px;
+}
+
+#itemName {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.itemImage {
+  width: 100%;
+}
+
+#itemSize {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+#itemSizeTitle {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+#itemDescription {
+  font-size: 11px;
+}
+
+.sizeButtonContainer {
+  border: 2px solid #cccccc;
+  height: 40px;
+  width: 40px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.sizeButtonText {
+  margin-top: 11px;
+  font-size: 11px;
+}
+
+#itemPurchaseButton {
+  height: 30px;
+  border: 3px solid #222222;
+  width: 150px;
+  text-align: center;
+}
+
+#itemPurchaseButton:hover {
+  background-color: #222222;
+  transition: background-color 0.2s;
+}
+
+#itemPurchaseButton:hover > div {
+  color: white;
+  transition: color 0.2s;
+}
+
+#itemPurchaseButtonText {
+  margin-top: 3px;
+}
+
+.infoSection {
+  margin-bottom: 30px;
+}
+
+#itemPrice {
+  font-weight: 600;
+
+  font-size: 14px;
+}

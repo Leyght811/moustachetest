@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  
   padding-top: 20px;
   /* height: calc(100vh - 50px); */
 }
@@ -16,7 +17,6 @@
 
 #shopImage {
   width: 400px;
-  height: 800px;
   margin-right: 50px;
 }
 
@@ -86,4 +86,21 @@
   font-weight: 600;
 
   font-size: 14px;
+}
+
+/* STYLES ONLY APPLY ON SCREENS SMALLER THAN 1028px wide */
+@media only screen and (max-width: 1028px) {
+  #pageContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #shopInfo{
+    margin: 0;
+    width: 400px;
+  }
+
+  #itemDescription{
+    width: 100%;
+  }
 }

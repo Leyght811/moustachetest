@@ -1,6 +1,5 @@
 #headerContainer {
   position: relative;
-  /* background-color: red; */
   padding: 15px;
 }
 
@@ -17,24 +16,16 @@
   margin-right: 150px;
 }
 
+
+
+
+/* Styles relating to the dropdown menu */
 #headerCartDropdown {
   display: none;
   position: absolute;
   background-color: white;
-  /* min-width: 160px; */
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-}
-
-#headerCartDropdown a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-#headerCartDropdown a:hover {
-  background-color: #f1f1f1;
 }
 
 .dropdown:hover #headerCartDropdown {
@@ -52,7 +43,6 @@
   border-left: 1px solid #222222;
   border-right: 1px solid #222222;
   border-top: 1px solid #222222;
-  border-bottom: 1px solid white;
 }
 
 .dropdownNode{

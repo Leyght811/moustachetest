@@ -7,10 +7,12 @@ const Layout = () => {
   const [cart, setCart] = useState([]);
   const [itemData, setItemData] = useState({});
 
+  // When function is called inside ShopPage it adds the selected data to cart where it can be used by Header
   function addToCart(item) {
     setCart([...cart, item]);
   }
 
+  // Gets item data from external sourse and sets it to the i"temData" state variable
   useEffect(() => {
     fetch(
       "https://3sb655pz3a.execute-api.ap-southeast-2.amazonaws.com/live/product"
@@ -19,7 +21,6 @@ const Layout = () => {
       .then((json) => setItemData(json));
   }, []);
 
-  console.log(itemData);
   return (
     <div>
       <Header cart={cart} />

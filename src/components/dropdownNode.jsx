@@ -3,10 +3,10 @@ import "../styles/header.css";
 import "../styles/styles.css";
 import image from "../imgs/classic-tee.jpg";
 
+// This is what appears when you hover over the "cart" button
 const DropdownNode = (props) => {
-//   console.log(props.item);
   return (
-    <div className="dropdownNode">
+    <div key={props.key} className="dropdownNode fontColorDark">
       <div className="dNodeImage">
         <img className="dropDownImage" src={image} alt="" />
       </div>
